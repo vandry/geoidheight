@@ -264,7 +264,7 @@ return function(url) {
 					t = Array.apply(null, Array(10)).map(function(_, i, arr) {
 						return v.reduce(function(acc, vj, j, arr) {
 							return acc + vj * c3x[j][i];
-						}) / c0x;
+						}, 0) / c0x;
 					});
 				} else {
 					v00 = model.rawval(ix, iy);
