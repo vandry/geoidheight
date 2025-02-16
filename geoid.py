@@ -137,10 +137,10 @@ class GeoidHeight(object):
     def _rawval(self, ix, iy):
         if iy < 0:
             iy = -iy
-            ix += self.width/2
+            ix += self.width//2
         elif iy >= self.height:
             iy = 2 * (self.height - 1) - iy
-            ix += self.width/2
+            ix += self.width//2
         if ix < 0:
             ix += self.width
         elif ix >= self.width:
